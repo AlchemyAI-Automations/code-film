@@ -1,0 +1,11 @@
+config.json
+.env
+*.env
+.DS_Store
+__pycache__/
+voices/
+out/
+review/
+stills/
+*.mp4
+.claude/

@@ -1,0 +1,8 @@
+{
+  "title": "Plantilla",
+  "lines": [
+    { "id": "v1", "text": "Un agente solo hace una tarea. Un sistema de agentes hace un proceso." },
+    { "id": "v2", "text": "La diferencia no está en el modelo. Está en cómo los conectas." },
+    { "id": "v3", "text": "Ingeniería agéntica, en español." }
+  ]
+}

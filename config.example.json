@@ -1,0 +1,37 @@
+{
+  "lib": "~/lemo-opuscar",
+  "envFile": "",
+  "filmsDir": "~/code-films",
+  "sttModel": "scribe_v1",
+  "defaultProfile": "narrador",
+  "profiles": {
+    "narrador": {
+      "voice": "TU_VOICE_ID",
+      "model": "eleven_multilingual_v2",
+      "stability": 0.5,
+      "similarity_boost": 0.85,
+      "style": 0.0,
+      "speed": 1.0,
+      "note": "Punto de partida parejo para explicar."
+    },
+    "narrador_energico": {
+      "voice": "TU_VOICE_ID",
+      "model": "eleven_multilingual_v2",
+      "stability": 0.15,
+      "similarity_boost": 0.8,
+      "style": 0.8,
+      "speed": 1.1,
+      "prime": "Esto es increíble, ¡no lo puedo creer! Escuchen bien, porque esto lo cambia todo:",
+      "note": "Más variación de tono: poca estabilidad, mucho estilo y un texto previo que da la intención (el modelo lo oye, no lo pronuncia). Con una voz clonada, el techo lo pone cómo se grabó la voz."
+    },
+    "narrador_v3": {
+      "voice": "TU_VOICE_ID",
+      "model": "eleven_v3",
+      "stability": 0.5,
+      "similarity_boost": 0.85,
+      "style": 0.0,
+      "speed": 1.0,
+      "note": "eleven_v3 acepta etiquetas de emoción en say ([serious], [pause]). Su stability solo admite 0, 0.5 o 1. Los clones profesionales no se entrenan para v3."
+    }
+  }
+}
