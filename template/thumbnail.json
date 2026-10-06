@@ -1,0 +1,10 @@
+{
+  "kicker": "EPISODIO 00",
+  "headline": ["PALABRA", "CLAVE EN", "MAYÚSCULAS."],
+  "accent": 2,
+  "footer": "una línea cierta del video",
+  "art": {
+    "dark": "Wide 16:9 key art, dark and dramatic. Near-black ink background (#0A1210) with a faint teal haze. On the right, ONE strong abstract luminous subject made of fine glowing teal particles that visualizes the idea of the video (describe it concretely).",
+    "light": "Wide 16:9 key art on a soft off-white mint background (#F4FAF8). On the right, ONE strong 3D glass-and-light subject that visualizes the idea of the video (describe it concretely), soft realistic shadows, volumetric glow."
+  }
+}

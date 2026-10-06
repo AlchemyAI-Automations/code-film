@@ -47,6 +47,18 @@ la IA escribe el programa que dibuja cada frame y la voz sale de ElevenLabs.
 10. **Reportar** con evidencia: duración, LUFS y pico, resultado de la prueba de lectura, qué NO se verificó
     (el modelo no escucha el audio: decirlo siempre).
 
+## Publicación (por episodio)
+
+Cada episodio termina con tres entregables, además del MP4, el SRT y el póster:
+
+1. **Miniatura**: `scripts/thumbnail.py <película>` lee `thumbnail.json` (titular de 2 a 4 líneas, kicker, línea de pie y un prompt de arte oscuro y otro claro),
+   genera el arte con GPT Image 2.5 Sunburst sin texto y compone el titular con la tipografía de la marca. Salen `miniatura/miniatura-dark.jpg` y
+   `miniatura-light.jpg` (1280x720). El arte oscuro de una figura abstracta luminosa contrasta más en el feed. El texto lo pone el código, nunca la IA.
+2. **Receta**: `RECETA.md` con modelo, skill, librería, voz, técnica y costo medido. Se enlaza en el comentario fijado.
+3. **Descripción**: una tensión que no repita lo que se ve y termine con el enlace. Se proponen 3 opciones de una línea; elige el autor.
+
+Para no arrastrar el contexto de una sesión larga, un episodio se produce con el subagente `code-film-episodio` (contexto limpio) o en una sesión nueva.
+
 ## Videos largos (más de 90 s): por capítulos
 
 1. Escribir **primero el guion completo** (un solo arco, una sola voz) y partirlo en capítulos de 45 a 75 s.
